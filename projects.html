@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Le Deng's Website</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+
+</head>
+<body>
+  <nav class="red lighten-2" role="navigation">
+    <div class="nav-wrapper container">
+
+      <ul class="left hide-on-med-and-down">
+        <li><a href="index.html" class="grey-text text-lighten-4">HOME</a></li>
+        <li><a href="projects.html" class="grey-text text-lighten-4">PROJECTS</a></li>
+        <li><a href="resume.pdf" class="grey-text text-lighten-4" target="_blank">RESUME</a></li>
+        <li><a href="#" class="grey-text text-lighten-4">CONTACT</a></li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="section grey lighten-3">
+    <div class="row">
+      <div class="col s12 center">
+        <h3><i class="mdi-content-send brown-text"></i></h3>
+        <h4 class="red-text text-lighten-2">MUSIC E-COMMERCE SOLUTION</h4>
+
+        <div class="carousel ">
+          <a class="carousel-item" href="#one!" ><img src="eshop1.jpg" ></a>
+          <a class="carousel-item" href="#two!" ><img src="eshop2.jpg"></a>
+          <a class="carousel-item" href="#three!"><img src="eshop3.jpg"></a>
+          <a class="carousel-item" href="#three!"><img src="eshop4.jpg"></a>
+          <a class="carousel-item" href="#three!"><img src="eshop5.jpg"></a>
+          <a class="carousel-item" href="#three!"><img src="eshop6.jpg"></a>
+        </div>
+
+        <a href="#" onclick="carouselRight()"><i class="fa fa-2x fa-chevron-circle-left" aria-hidden="true"></i></a>&nbsp;&nbsp;
+        <a href="#" onclick="carouselLeft()"><i class="fa fa-2x fa-chevron-circle-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+  <div class="section" >
+    <div class="row">
+      <div class="col s12 center">
+        <h4 class="left-align">Intro</h4>
+        <p class="left-align light">This is an E-Commerce Online Music Store Website involving front-end and back-end, where user can
+          browse and search products. User can add products to shopping cart and checkout by filling customer
+          information. User can leave messages asking questions. Admin can manage product inventory. Admin
+          can manage messages left by customer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Speeds up development</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">User Experience Focused</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Easy to work with</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+    <div>
+      <p class="center-align flow-text">
+        <a class="btn-floating btn-small waves-effect waves-light red" href="https://www.linkedin.com/in/le-deng-82829710a?trk=prof-samename-name" target="_blank"><i class="fa fa-linkedin-square fa-spin" aria-hidden="true"></i></a>
+        <a class="btn-floating btn-small waves-effect waves-light red" onclick="increment()"><i class="fa fa-thumbs-up fa-spin" aria-hidden="true"></i></a>
+        <span class="red-text text-lighten-1">Likes</span>
+        <span class="like-display red-text text-lighten-1"></span>
+      </p>
+    </div>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+  </html>

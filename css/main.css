@@ -5,3 +5,22 @@ html {
 .text-container {
   padding-top: 50px;
 }
+
+.box {
+  border: 5px solid red;
+}
+
+.carousel {
+  width: auto;
+  height: 450px;
+  padding-top: 20px;
+}
+
+.carousel-background {
+  /*background-image: url("../carousel-back.jpg");*/
+}
+
+.carousel-item {
+  width: 700px !important;
+  padding-top: 130px !important;
+}
