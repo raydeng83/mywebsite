@@ -6,7 +6,7 @@ $(document).ready(function () {
       dist:-300,
     });
 
-    setInterval(function(){$('.carousel').carousel('next')}, 10000);
+    // setInterval(function(){$('.carousel').carousel('next')}, 10000);
 })
 
 var likes=0;
