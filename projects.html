@@ -53,71 +53,69 @@
   </div>
 
   <div class="container">
-  <div class="section" >
-    <div class="row">
-      <div class="col s12 center">
-        <h4 class="left-align">Intro</h4>
-        <p class="left-align light">This is an E-Commerce Online Music Store Website involving front-end and back-end, where user can
-          browse and search products. User can add products to shopping cart and checkout by filling customer
-          information. User can leave messages asking questions. Admin can manage product inventory. Admin
-          can manage messages left by customer.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
+    <div class="section" >
       <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
+        <div class="col s12 center">
+          <h4 class="left-align">Intro</h4>
+          <p class="left-align light">This is an E-Commerce Online Music Store Website involving front-end and back-end, where user can
+            browse and search products. User can add products to shopping cart and checkout by filling customer
+            information. User can leave messages asking questions. Admin can manage product inventory. Admin
+            can manage messages left by customer.</p>
+            <br>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            <h4 class="left-align">Design</h4>
+            <p class="left-align light">Here we'll take a look at how the system is actually designed.</p>
+            <h5 class="left-align">System Architecture</h5>
+            <p class="left-align light">Here is an overview on the system architecture:</p>
+            <div class="center" style="width:70%;">
+              <img src="system-diagram.png" class="responsive-img materialboxed" alt="Unsplashed background img 3" />
+            </div>
+            <p class="left-align light">It uses the popular MVC pattern, which separates concerns of business logic. This will make it easier to manage the complexity of large applications and keep it well organzied. </p>
+
+            <p class="left-align light">The Model part deals with domain objects such as product, cart, cartItem, customer and etc. The view part uses Bootstrap as front-end css framework and JSP to show the pages with dynamic content. Besides that, angular js is used to call REST service APIs on the backend to deal with shopping cart operations (add, update, remove cart items). Controllers will be handling the incoming requests and depending on the request type, it will be delegated to the correponding controller.</p>
+
+            <p class="left-align light">When a http request comes in, it is first filtered to make sure it has proper privilege to proceed. This is handled by the security controllers. After the security is cleared, it will be distributed to corresponding controllers. The controller will then either go to view block to send back the view content as response, it will need to consult some service components for further operations. For example, a registered customer wants to login and once successfully logged in (security cleared), the customer will be brought to the product list page (default controller to display view).</p>
+            <br>
+
+            <h5 class="left-align">Business Flow</h5>
+            <div class="center" style="width:90%;">
+              <img src="business-flow.png" class="responsive-img materialboxed" alt="Unsplashed background img 3" />
+            </div>
+            <p class="left-align light">The business flow looks like this. Before login, a guest can view product list and can also register as a customer. When logging in, the user can login as customer or administrator, depending on the credentials. Admin can view customer list or manage product. Customer can browse products and add products to shopping cart. Then he/she can proceed to checkout the shopping cart.</p>
+            <br>
+
+            <h5 class="left-align">Tech Stack</h5>
+            <p class="left-align light">· Front-end: HTML, CSS, Bootstrap, JSP, JavaScript, JQuery</p>
+            <p class="left-align light">· Back-end: Spring MVC, Spring Security, Spring Webflow</p>
+            <p class="left-align light">· Database: Spring Data, JPA, Hibernate, MySQL</p>
+            <br>
+
+            <h5 class="left-align">Entity-Relationship Diagram</h5>
+            <br>
+            <div class="center" style="width:70%;">
+              <img src="er-diagram.png" class="responsive-img materialboxed" alt="Unsplashed background img 3" />
+            </div>
           </div>
-        </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
         </div>
       </div>
-
     </div>
   </div>
 
+  <div>
+    <p class="center-align flow-text">
+      <a class="btn-floating btn-small waves-effect waves-light red" href="https://www.linkedin.com/in/le-deng-82829710a?trk=prof-samename-name" target="_blank"><i class="fa fa-linkedin-square fa-spin" aria-hidden="true"></i></a>
+      <a class="btn-floating btn-small waves-effect waves-light red" onclick="increment()"><i class="fa fa-thumbs-up fa-spin" aria-hidden="true"></i></a>
+      <span class="red-text text-lighten-1">Likes</span>
+      <span class="like-display red-text text-lighten-1"></span>
+    </p>
+  </div>
 
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/main.js"></script>
 
-    <div>
-      <p class="center-align flow-text">
-        <a class="btn-floating btn-small waves-effect waves-light red" href="https://www.linkedin.com/in/le-deng-82829710a?trk=prof-samename-name" target="_blank"><i class="fa fa-linkedin-square fa-spin" aria-hidden="true"></i></a>
-        <a class="btn-floating btn-small waves-effect waves-light red" onclick="increment()"><i class="fa fa-thumbs-up fa-spin" aria-hidden="true"></i></a>
-        <span class="red-text text-lighten-1">Likes</span>
-        <span class="like-display red-text text-lighten-1"></span>
-      </p>
-    </div>
-
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/main.js"></script>
-
-  </body>
-  </html>
+</body>
+</html>
