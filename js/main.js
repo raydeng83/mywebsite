@@ -31,7 +31,7 @@ $(document).ready(function () {
             $('.fixed-position').css(css2);
         }
 
-      
+
     });
 
 
@@ -39,8 +39,13 @@ $(document).ready(function () {
 
 var likes=0;
 
+if (localStorage.likes!=null) {
+  likes=localStorage.likes;
+}
+
 function increment() {
-  likes = likes + 1;
+  likes = Number(likes) + 1;
+  localStorage.setItem("likes", likes);
   console.log(likes);
   $(".like-display").html(likes);
   // Materialize.toast(message, displayLength, className, completeCallback);
