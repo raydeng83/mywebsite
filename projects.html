@@ -55,20 +55,22 @@
   <div class="container">
     <div class="section" >
       <div class="row">
-        <div class="col s12 center">
-          <h4 class="left-align">Intro</h4>
+
+        <div class="col s10 center">
+          <h4 id="intro" class="left-align scrollspy">Intro</h4>
           <p class="left-align light">This is an E-Commerce Online Music Store Website involving front-end and back-end, where user can
             browse and search products. User can add products to shopping cart and checkout by filling customer
             information. User can leave messages asking questions. Admin can manage product inventory. Admin
             can manage messages left by customer.</p>
             <br>
 
-            <h4 class="left-align">Design</h4>
+            <h4 id="design" class="left-align scrollspy">Design</h4>
             <p class="left-align light">Here we'll take a look at how the system is actually designed.</p>
-            <h5 class="left-align">System Architecture</h5>
+
+            <h5  class="left-align ">System Architecture</h5>
             <p class="left-align light">Here is an overview on the system architecture:</p>
             <div class="center" style="width:70%;">
-              <img src="system-diagram.png" class="responsive-img materialboxed" alt="Unsplashed background img 3" />
+              <img id="system-architecture" src="system-diagram.png" class="responsive-img materialboxed scrollspy" alt="Unsplashed background img 3" />
             </div>
             <p class="left-align light">It uses the popular MVC pattern, which separates concerns of business logic. This will make it easier to manage the complexity of large applications and keep it well organzied. </p>
 
@@ -77,26 +79,36 @@
             <p class="left-align light">When a http request comes in, it is first filtered to make sure it has proper privilege to proceed. This is handled by the security controllers. After the security is cleared, it will be distributed to corresponding controllers. The controller will then either go to view block to send back the view content as response, it will need to consult some service components for further operations. For example, a registered customer wants to login and once successfully logged in (security cleared), the customer will be brought to the product list page (default controller to display view).</p>
             <br>
 
-            <h5 class="left-align">Business Flow</h5>
+            <h5  class="left-align ">Business Flow</h5>
             <div class="center" style="width:90%;">
-              <img src="business-flow.png" class="responsive-img materialboxed" alt="Unsplashed background img 3" />
+              <img id="business-flow" src="business-flow.png" class="responsive-img materialboxed scrollspy" alt="Unsplashed background img 3" />
             </div>
             <p class="left-align light">The business flow looks like this. Before login, a guest can view product list and can also register as a customer. When logging in, the user can login as customer or administrator, depending on the credentials. Admin can view customer list or manage product. Customer can browse products and add products to shopping cart. Then he/she can proceed to checkout the shopping cart.</p>
             <br>
 
-            <h5 class="left-align">Tech Stack</h5>
+            <h5 id="tech-stack" class="left-align scrollspy">Tech Stack</h5>
             <p class="left-align light">· Front-end: HTML, CSS, Bootstrap, JSP, JavaScript, JQuery</p>
             <p class="left-align light">· Back-end: Spring MVC, Spring Security, Spring Webflow</p>
             <p class="left-align light">· Database: Spring Data, JPA, Hibernate, MySQL</p>
             <br>
 
-            <h5 class="left-align">Entity-Relationship Diagram</h5>
+            <h5 id="entity-relation" class="left-align scrollspy">Entity-Relationship Diagram</h5>
             <br>
             <div class="center" style="width:70%;">
               <img src="er-diagram.png" class="responsive-img materialboxed" alt="Unsplashed background img 3" />
             </div>
           </div>
 
+          <div class="col hide-on-small-only fixed-position right" >
+            <ul class="section table-of-contents">
+              <li><a href="#intro">Intro</a></li>
+              <li><a href="#design">Design</a></li>
+              <li><a href="#system-architecture">System<br>Architecture</a></li>
+              <li><a href="#business-flow">Business Flow</a></li>
+              <li><a href="#tech-stack">Tech Stack</a></li>
+              <li><a href="#entity-relation">ER Diagram</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -110,6 +122,8 @@
       <span class="like-display red-text text-lighten-1"></span>
     </p>
   </div>
+
+
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

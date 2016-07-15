@@ -5,8 +5,36 @@ $(document).ready(function () {
     $('.carousel').carousel({
       dist:-300,
     });
+    $('.scrollspy').scrollSpy();
 
     // setInterval(function(){$('.carousel').carousel('next')}, 10000);
+
+    var fixmeTop = $('.fixed-position').offset().top;       // get initial position of the element
+    var top;
+    var left;
+    var css1;
+    var css2;
+    var scrollFlag = false;
+
+    $(window).scroll(function() {                  // assign scroll event listener
+
+        var currentScroll = $(window).scrollTop(); // get current position
+
+        if (currentScroll >= (fixmeTop-10)) {
+          css1 = {position: 'fixed', top: 15, left: left};
+            $('.fixed-position').css(css1);
+        } else {
+          top = $('.fixed-position').offset().top;
+          left = $('.fixed-position').offset().left;
+
+          css2 = {position: 'static', top: top, left: left};
+            $('.fixed-position').css(css2);
+        }
+
+      
+    });
+
+
 })
 
 var likes=0;
